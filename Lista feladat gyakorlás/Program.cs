@@ -25,6 +25,27 @@ namespace Lista_feladat_gyakorlás
                 Console.Write($"{szamok[i]}, ");
             }
 
+            //5.)
+            Console.WriteLine("\r\n 5. feladat: ");
+            int legnagyobb = 0;
+            int masodik = 0;
+
+            for (int i = 0;i < szamok.Count;i++)
+            {
+                if (szamok[i] > legnagyobb )
+                {
+                    legnagyobb = szamok[i];
+                }
+            }
+            for (int i = 0;i < szamok.Count; i++)
+            {
+                if (szamok[i] > masodik && szamok[i] < legnagyobb)
+                {
+                    masodik = szamok[i];
+                }
+            }
+            Console.WriteLine($" a második legnagyobb szám: {masodik}");
+
             //4.)
 
             Console.WriteLine("\r\n 4. feladat: ");
